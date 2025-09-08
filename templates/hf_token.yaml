@@ -1,0 +1,11 @@
+{{- if .Values.hf_token.create -}}
+apiVersion: v1
+kind: Secret
+metadata:
+  name: {{ .Values.hf_token.secretName | default "hf-token" }}
+  labels:
+    {{- include "psap-charts.labels" . | nindent 4 }}
+type: Opaque
+stringData:
+  HF_TOKEN: {{ .Values.hf_token.token }}
+{{- end -}}

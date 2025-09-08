@@ -1,0 +1,7 @@
+# Default values for psap-charts.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+hf_token:
+  create: true
+  token: "xyz"
