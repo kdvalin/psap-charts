@@ -6,9 +6,9 @@ metadata:
   name: {{ .Values.llm_loader.jobName | default "llm-loader" }}
   labels:
     {{- include "psap-charts.labels" . | nindent 4 }}
-	annotations:
-		helm.sh/hook: "post-install,post-upgrade"
-		helm.sh/hook-delete-policy: "hook-succeeded"
+    annotations:
+        helm.sh/hook: "post-install,post-upgrade"
+        helm.sh/hook-delete-policy: "hook-succeeded"
 spec:
   template:
     spec:
