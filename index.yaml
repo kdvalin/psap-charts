@@ -3,6 +3,16 @@ entries:
   psap-llm-loader:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-09-15T18:55:07.324296748Z"
+    description: A job to load an LLM model into a PVC
+    digest: c0f52a50d8f3475f0e2d92f47c17f9bca5948c2b5a2cfcab455d8c8b1bfd6811
+    name: psap-llm-loader
+    type: application
+    urls:
+    - https://github.com/kdvalin/psap-charts/releases/download/psap-llm-loader-0.2.4/psap-llm-loader-0.2.4.tgz
+    version: 0.2.4
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2025-09-15T18:47:38.271932474Z"
     description: A job to load an LLM model into a PVC
     digest: 52b92865f8069f28d1cce1cc35659fcecedf9820d0440daa5aa6578ddf863717
@@ -61,4 +71,4 @@ entries:
     urls:
     - https://github.com/kdvalin/psap-charts/releases/download/psap-llm-loader-0.1.0/psap-llm-loader-0.1.0.tgz
     version: 0.1.0
-generated: "2025-09-15T18:47:38.271960056Z"
+generated: "2025-09-15T18:55:07.324323859Z"
