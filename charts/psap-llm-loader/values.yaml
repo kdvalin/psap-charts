@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 hf_token:
-  create: true
+  create: false
   token: TOKEN
 
 llm_loader:
