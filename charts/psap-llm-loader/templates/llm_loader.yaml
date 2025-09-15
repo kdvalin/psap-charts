@@ -13,14 +13,14 @@ spec:
       containers:
         - name: {{ .Values.llm_loader.containerName | default "llm-loader" }}
           image: {{ .Values.llm_loader.image | default "quay.io/kvalin/llm-loader:latest" }}
-          {{- if eq .Values.llm_loader.source "huggingface" }}
+          {{ if eq .Values.llm_loader.source "huggingface" -}}
           tty: true
           {{- if or .Values.hf_token.create .Values.hf_token.secretName }}
           envFrom:
           - secretRef:
               name: {{ .Values.hf_token.secretName | default "hf-token" }}
-          {{ end -}}
-          {{ end -}}
+          {{- end }}
+          {{- end }}
           env:
            - name: HOME
              value: {{ .Values.llm_loader.outputDir | default (printf "/models/%s" $model) }}
