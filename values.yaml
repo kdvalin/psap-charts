@@ -4,4 +4,10 @@
 
 hf_token:
   create: true
-  token: "xyz"
+  token: TOKEN
+
+llm_loader:
+  create: true
+  source: "huggingface"
+  model: ibm-granite/granite-3.1-8b-instruct
+  pvcName: "model-storage"
