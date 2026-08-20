@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  llm-katan:
+  - apiVersion: v2
+    appVersion: v0.22.0
+    created: "2026-08-20T15:44:07.989982402Z"
+    description: One tiny model, every LLM API. Drop-in test server for OpenAI, Anthropic,
+      Bedrock, and Vertex. Real inference, no API keys, no GPU needed.
+    digest: 11db67362a9de87c8d5dbf72046635460c90bc9cf291d0713a877a1860173c14
+    name: llm-katan
+    type: application
+    urls:
+    - https://github.com/kdvalin/psap-charts/releases/download/llm-katan-0.1.0/llm-katan-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-08-20T15:44:07.989994665Z"
