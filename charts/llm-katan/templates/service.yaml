@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "llm-katan.fullname" . }}
+  labels:
+    {{- include "llm-katan.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.llm_katan.port }}
+      targetPort: {{ include "llm-katan.servicePort" . }}
+      protocol: TCP
+      name: http
+  selector:
+    {{- include "llm-katan.selectorLabels" . | nindent 4 }}
